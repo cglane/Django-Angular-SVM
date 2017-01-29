@@ -1,6 +1,4 @@
 # Django-Angular-SVM
-SVM project integrated with django-angular
-#Description
 >Django/Angular app for running a Machine Learning application
 #Requirements
 1)Django
