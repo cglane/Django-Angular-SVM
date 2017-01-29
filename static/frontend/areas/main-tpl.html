@@ -1,0 +1,18 @@
+<div>
+  <form id = "FormId"name = 'myForm' data-ng-controller = "MainCtrl as vm">
+    <!-- <input type="file" name = 'file'ng-file-select="vm.showContent($files)"on-read-file="vm.showContent($fileContent)" /> -->
+    <!-- <input id = "#csv-file"name = "csvFile"type="file" onchange="angular.element(this).scope().file_changed(this)"/> -->
+    <input id = "csv-file"name = "csvFile"type="file"/>
+    <fieldset class="form-group">
+      <label>Type</label>
+      <select name = "title"placeholder = "language"class="form-control" ng-model = "vm.uploadObj.type" required>
+        <option>Amex</option>
+        <option>Finances</option>
+      </select>  </fieldset>
+  </fieldset>
+    <button type="submit" class = "btn btn-primary"ng-click = "submit()"name="button">Submit</button>
+  </form>
+  <div>
+    {{uploadObj.jsonData}}
+  </div>
+</div>
